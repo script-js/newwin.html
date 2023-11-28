@@ -1,1 +1,32 @@
-<script>location.replace("/jsg-home/wb.html")</script>
+<!DOCTYPE HTML>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+  body {background-color: #111111; color:whitesmoke;font-family: 'Roboto', sans-serif;text-align:center;}
+</style>
+<script>
+  var loaded1 = false;
+  
+  function fsize() {
+    if (loaded1 == false) {
+      loaded1 = true
+    } else {
+      ubframe.style.height = "100%"
+      ubframe.style.top = "0px"
+    }
+  }
+</script>
+<iframe src="https://government.fishoho.com/" id="ubframe" frameborder="0" onload="fsize()"></iframe>
+<br>
+<div style="width:1px;height:115px"></div>
+<h2><u>MiniBrowser</u></h2><p>Type a URL and hit enter</p>
+<style>
+  #ubframe {
+    position: absolute;
+    left: 0px;
+    top: -240px;
+    width: 101%;
+    height: 330px;
+  }
+</style>
